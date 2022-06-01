@@ -1,0 +1,55 @@
+/*Barra Información*/
+.barra {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.barra__ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.barra__icon {
+    width: 12%;
+    padding: 0 2px;
+    display: flex;
+    font-size: 30px;
+}
+
+.barra__p {
+ width: 70%;
+ line-height: 12px;
+ text-align: center;
+}
+
+.barra__p p {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline;
+}
+
+/* Media Query Pequeño*/
+@media screen and (max-width: 630px) {
+    .barra {
+        width: 100%;
+    }
+    .barra__ {
+        width: 30%;
+    }
+    .barra__icon {
+        width: 18%;
+    }
+    .barra__p {
+        width: 100%;
+    }
+    .barra__p p {
+        font-size: 10px;
+        line-height: 2px;
+    }
+}

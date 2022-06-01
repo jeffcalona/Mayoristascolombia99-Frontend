@@ -1,0 +1,180 @@
+.header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1;
+    justify-content: space-between;
+}
+
+.logo__img {
+    width: 160px;
+}
+
+.menu {
+    width: 100%;
+    margin-left: 50px;
+}
+
+
+.menu__ul {
+    display: flex;
+}
+
+
+
+.menu__a {
+    padding: 0 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.bolsa__icon {
+    color: black;
+    font-size: 30px;
+    padding: 0 40px 0 0;
+}
+
+
+
+.productComponent__img {
+    max-width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.productComponent__p {
+    margin-left: 20px;
+}
+
+
+
+.mujer__ {
+    position: absolute;
+    display: flex;
+    padding-top: 20px;
+    visibility: hidden;
+}
+
+.HeaderProductWoman, .HeaderProductMan, .HeaderProductKids {
+    background-color: white;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.HeaderProductWoman {
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderProductWoman__ {
+    width: 60%;
+}
+
+.HeaderProductWoman__ li {
+    display: inline-block;
+    width: 50%;
+}
+
+.HeaderProductWoman__img {
+    width: 35%;
+    margin-top: 10px;
+    margin-right: 60px;
+}
+
+.HeaderProductWoman__img img {
+    width: 100%;
+}
+
+.mujer__img {
+    width: 40%;
+}
+
+.mujer__img img {
+    width: 100%;
+}
+
+
+.productComponent{
+    padding: 10px 0 5px 30px;
+    height: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.productComponent__a {
+    display: flex;
+    align-items: center;
+}
+
+.hombre__ {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    visibility: hidden;
+}
+
+.HeaderProductMan, .HeaderProductKids {
+    display: flex;
+    align-items: center;
+}
+
+.HeaderProductMan__, .HeaderProductKids__ {
+    width: 40%;
+}
+
+.HeaderProductMan__img, .HeaderProductKids__img {
+    width: 60%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.HeaderProductMan__img img, .HeaderProductKids__img img {
+    width: 80%;
+    
+}
+
+.niño__ {
+    position: absolute;
+    padding-top: 20px;
+    visibility: hidden;
+    width: 100%
+}
+
+
+
+/* Media Query*/
+@media screen and (min-width: 779px) {
+    .menu__ul li:hover > div {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    
+    .logo {
+        margin: auto;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+/* Media Query Pequeño*/
+@media screen and (max-width: 630px) {
+    .header {
+        padding: 10px 0;
+    }
+    .menuDesplegable svg {
+        margin: 0;
+    }
+    .bolsa__icon {
+        padding: 0;
+    }
+}
